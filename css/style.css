@@ -12,6 +12,24 @@ header {
   padding: 50px 20px;
 }
 
+.header-container {
+  display: flex;              /* Met la photo et le texte côte à côte */
+  align-items: center;        /* Centre verticalement */
+  gap: 20px;                  /* Espace entre la photo et le texte */
+}
+
+.profile-photo img {
+  width: 150px;               /* Taille de la photo */
+  height: 150px;
+  border-radius: 50%;         /* Rend la photo ronde */
+  object-fit: cover;          /* Coupe et ajuste bien l’image */
+  border: 3px solid #00ff99;  /* Bordure stylée (facultatif) */
+}
+
+.header-text {
+  max-width: 600px;
+}
+
 header h1 {
   font-family: verdana;
   font-size: 3em;
