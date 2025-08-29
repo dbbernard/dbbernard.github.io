@@ -2,24 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: darkblue; }
-  </style>
+  <!-- Lien Animate.css pour animations prêtes à l'emploi -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="shortcut icon" type="image/png" href="assets/favicon.png" /> -->
 </head>
+  
 <body>
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>Bonjour, je suis <b>DOLI B. Bernard</b>, ingenieur des travaux informatique, étudiant en Master.</p>
-  <p>Voici mes projets :</p>
-  <ul>
-    <li>🔒 Projet 1 - Pentest réseau</li>
-    <li>🔍 Projet 2 - Investigation Numerique</li>
-    <li>💻 Projet 3 - Développement web</li>
-    <li>📊 Projet 4 - Analyse de données</li>
-    <li> <a href="ctf.html" ></li>
-  </ul>
-  <p>📧 Contact : <a href="mailto:dolibenn777@gmail.com<">dolibenn777@gmail.com</a></p>
-  <p>📧 LinkId : <a href="www.linkedin.com/in/b-bernard-doli-10b4762bb<">LinkID</a></p>
+
+  <header>
+    <h1 class="animate__animated animate__fadeInDown">Bienvenue sur mon Portfolio</h1>
+    <p class="animate__animated animate__fadeInUp">Je suis Benn DOLI, passionné de cybersécurité et développement web</p>
+  </header>
+
+  <section>
+    <h2 class="animate__animated animate__fadeIn">Mes Projets</h2>
+    <div class="project animate__animated animate__zoomIn">
+      <h3>🔒 Projet Pentest Réseau</h3>
+      <p>Analyse et sécurisation d’un réseau local</p>
+    </div>
+    <div class="project animate__animated animate__zoomIn animate__delay-1s">
+      <h3>💻 Développement Web</h3>
+      <p>Portfolio interactif en HTML/CSS/JS</p>
+    </div>
+    <div class="project animate__animated animate__zoomIn animate__delay-2s">
+      <h3>📊 Analyse de Données</h3>
+      <p>Visualisation de logs et tableaux de bord</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📧 Contact : <a href="mailto:tonemail@example.com" style="color:white;">tonemail@example.com</a></p>
+  </footer>
+
 </body>
 </html>
