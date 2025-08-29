@@ -47,6 +47,27 @@ section {
   padding: 20px 10px;
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px;  /* Espacement entre les blocs */
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* 
 .project {
   display: inline-block;
   background-color: white;
@@ -56,7 +77,7 @@ section {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
+*/
 .project:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
