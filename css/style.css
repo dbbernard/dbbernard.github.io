@@ -15,12 +15,12 @@ header {
 .header-container {
   display: flex;              /* Met la photo et le texte côte à côte */
   align-items: center;        /* Centre verticalement */
-  gap: 20px;                  /* Espace entre la photo et le texte */
+  gap: 50px;                  /* Espace entre la photo et le texte */
 }
 
 .profile-photo img {
-  width: 150px;               /* Taille de la photo */
-  height: 150px;
+  width: 200px;               /* Taille de la photo */
+  height: 200px;
   border-radius: 50%;         /* Rend la photo ronde */
   object-fit: cover;          /* Coupe et ajuste bien l’image */
   border: 3px solid #00ff99;  /* Bordure stylée (facultatif) */
