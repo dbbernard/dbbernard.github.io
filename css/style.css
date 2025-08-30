@@ -1,5 +1,3 @@
-<style>
-
   /* Style général du header */
   header {
     display: flex;               /* Active le flexbox pour aligner image et texte */
@@ -33,4 +31,3 @@
   header h1, header p {
     margin: 0; /* Supprime les marges par défaut */
   }
-</style>
