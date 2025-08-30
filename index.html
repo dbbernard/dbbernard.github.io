@@ -1,73 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
-  <!-- Lien Animate.css pour animations prêtes à l'emploi -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/png" size="96x96" href="data/logo-portefolio.png" /> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio DOLI B. Bernard</title>
+
+  <!-- Bootstrap CSS pour le style et la mise en page responsive -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes (WhatsApp, Mail, flèches, etc.) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS personnalisé -->
+  <style>
+    /* Style général du header */
+    header {
+      background-color: #f8f9fa; /* Couleur de fond claire */
+      padding: 50px 0;           /* Padding vertical */
+      text-align: center;         /* Centrer le contenu */
+    }
+    /* Image de profil ronde */
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;         /* Ajuster l'image sans déformation */
+      border-radius: 50%;        /* Rendre l'image ronde */
+      margin-bottom: 20px;       /* Espacement sous l'image */
+    }
+
+    /* Style des blocs de projets */
+    .project {
+      display: inline-block; /* Permet de placer plusieurs projets sur une même ligne */
+      background-color: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px; /* Coins arrondis */
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Ombre légère */
+      transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
+    }
+    /* Effet au survol du projet */
+    .project:hover {
+      transform: translateY(-5px); /* Léger déplacement vers le haut */
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.2); /* Ombre plus forte */
+    }
+  </style>
 </head>
-  
 <body>
-<header>
-  <div class="header-container">
-    <!-- Zone Photo -->
-    <div class="profile-photo">
-      <img src="data/moi.jpg" alt="Ma Photo">
-    </div>
 
-    <!-- Zone Texte -->
-    <div class="header-text">
-      <h3>Salut, Bienvenue sur mon Portfolio, Je suis :</h3>
-      <h1 class="animate__animated animate__fadeInDown">DOLI B. Bernard</h1>
-      <p class="animate__animated animate__fadeInUp">passionné de cybersécurité et développement web</p>
-    </div>
-  </div>
-</header>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <!-- Image de profil -->
+    <img src="photo.jpg" alt="DOLI B. Bernard">
+    <!-- Nom de la personne -->
+    <h1>DOLI B. Bernard</h1>
+    <!-- Description courte / titre -->
+    <p>Passionné de cybersécurité et développement web</p>
+  </header>
 
-  <section>
-    <h1 class="animate__animated animate__fadeIn">Mes Projets</h1>
-    <div class="project animate__animated animate__zoomIn">
-      <h3>🔒 Projet Pentest Réseau</h3>
-      <p>Analyse et sécurisation d’un réseau local </br>
-        Since version 3.7.0 Animate.css supports the prefers-reduced-motion media query which disables animations based on 
-        the OS system's preference on supporting browsers (most current browsers support it). This is a critical accessibility feature 
-        and should never be disabled! This is built into browsers to help people with vestibular and seizure disorders. 
-        You can read more about it here. If your web-thing needs the animations to function, warn users, but don't disable the feature.
-        You can do it easily with CSS only. Here's a simple example
-      </p>
-    </div>
-    
-    <div class="project animate__animated animate__zoomIn animate__delay-1s">
-      <h3>💻 Développement Web</h3>
-      <p>Portfolio interactif en HTML/CSS/JS</p>
-    </div>
-    
-    <div class="project animate__animated animate__zoomIn animate__delay-2s">
-      <h3>📊 Analyse de Données</h3>
-      <p>Visualisation de logs et tableaux de bord</p>
+  <!-- ================= SECTION PROJETS ================= -->
+  <section class="container my-5">
+    <!-- Titre de la section -->
+    <h2 class="mb-4 text-center">Mes Projets</h2>
+    <!-- Conteneur pour les projets -->
+    <div class="d-flex flex-wrap justify-content-center">
+      <!-- Projet 1 -->
+      <div class="project">
+        <h5>Projet 1</h5>
+        <p>Description courte du projet 1.</p>
+      </div>
+      <!-- Projet 2 -->
+      <div class="project">
+        <h5>Projet 2</h5>
+        <p>Description courte du projet 2.</p>
+      </div>
+      <!-- Projet 3 -->
+      <div class="project">
+        <h5>Projet 3</h5>
+        <p>Description courte du projet 3.</p>
+      </div>
+      <!-- Projet 4 -->
+      <div class="project">
+        <h5>Projet 4</h5>
+        <p>Description courte du projet 4.</p>
+      </div>
     </div>
   </section>
 
-  <!-- PIED DE PAGE -->
-  <footer>
-    <p>
-        <i class="fa-solid fa-envelope" style="color: green; font-size:20px;"></i>
-        Contact : <a href="mailto:tonemail@example.com" style="color:white;">doli.bernard7@gmail.com</a>
-    </p>
-    <p>
-       <i class="fa-brands fa-whatsapp" style="color: green; font-size:20px;"></i>
-       WhatsApp : (+226) 65-89-14-39
-    </p>
-    <p>
-      <i class="fa-solid fa-phone-volume" style="color: green; font-size:20px;"></i>
-      Telephone : (+226) 62-47-24-41 </p>
-  </footer>
-  <!-- FIN DE PIED DE PAGE -->
+  <!-- ================= SECTION RECENT POSTS ================= -->
+  <section class="container my-5">
+    <!-- Titre de la section -->
+    <h2 class="mb-4 text-center">Recent Posts</h2>
+    <!-- Liste des articles récents avec Bootstrap List Group -->
+    <div class="list-group">
+      <!-- Article 1 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="mb-1">Blog Post Title 1</h5>
+          <small class="text-muted">January 15, 2025</small>
+          <p class="mb-1">Brève description ou extrait du post 1...</p>
+        </div>
+        <!-- Flèche pour indiquer que c'est cliquable -->
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <!-- Article 2 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="mb-1">Blog Post Title 2</h5>
+          <small class="text-muted">January 14, 2025</small>
+          <p class="mb-1">Brève description ou extrait du post 2...</p>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <!-- Article 3 -->
+      <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="mb-1">Blog Post Title 3</h5>
+          <small class="text-muted">January 13, 2025</small>
+          <p class="mb-1">Brève description ou extrait du post 3...</p>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </section>
 
+  <!-- ================= SECTION CONTACT ================= -->
+  <section class="container my-5">
+    <h2 class="mb-4 text-center">Contact</h2>
+    <!-- Informations de contact centrées -->
+    <p class="text-center">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp : (+226) 65-89-14-39<br>
+      <i class="fa-solid fa-envelope"></i> Email : example@email.com
+    </p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-5 text-center bg-light">
+    <p>Portfolio créé par <strong>DOLI B. Bernard</strong></p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
+
+  <!-- Bootstrap JS pour le comportement interactif -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
